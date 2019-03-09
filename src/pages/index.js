@@ -1,6 +1,6 @@
 import React from "react"
-// import styled from 'styled-components'
-import preseli from './../images/preseli.jpg'
+import styled from 'styled-components'
+import preseli from './../assets/preseli.jpg'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,14 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div 
-      style={{ 
-        backgroundImage: `url(${preseli})`,
-        // backgroundSize: 'cover',
-        height: 'calc(100vh)',
-        width: '100vw',
-      }}
-    >
+    <Background>
       <div style={{overflowY: 'scroll', height: '100%'}}>
         <div style={{ height: 'calc(40%)', opacity: 0}}/>
         <div
@@ -68,11 +61,18 @@ const IndexPage = () => (
         <div style={{ height: '200px', opacity: 0}}/>
         
       </div>
-    </div>
+    </Background>
   </Layout>
 )
 
 export default IndexPage
+
+const Background = styled.div`
+  background-image: url(${preseli});
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+`
 
 
 // const Nav = styled.div`
