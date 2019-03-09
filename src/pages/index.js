@@ -69,9 +69,9 @@ export default IndexPage
 
 const Background = styled.div`
   background-image: url(${preseli});
+  background-size: cover;
   height: 100vh;
   width: 100vw;
-  background-size: cover;
 `
 
 
