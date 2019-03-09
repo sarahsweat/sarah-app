@@ -11,9 +11,9 @@ const IndexPage = () => (
     <div 
       style={{ 
         backgroundImage: `url(${preseli})`,
-        backgroundSize: 'cover',
         height: 'calc(100vh)',
         width: '100vw',
+        backgroundSize: 'cover',
       }}
     >
       <div style={{overflowY: 'scroll', height: '100%'}}>
@@ -34,7 +34,7 @@ const IndexPage = () => (
             margin: '20px'
           }}
         />
-        <p>Web Developer | Teacher | Content Creator</p>
+        <p>| Web Developer | Teacher | Content Creator |</p>
           {/* <Nav>
             <Link to="/about/">About</Link>
             <Link to="/about/">Projects</Link>
