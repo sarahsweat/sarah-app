@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import preseli from '../images/preseli.jpg'
 
 import Layout from "../components/layout"
@@ -76,8 +75,8 @@ const IndexPage = () => (
 export default IndexPage
 
 
-const Nav = styled.div`
-  > * {
-    padding: 10px;
-  }
-`
+// const Nav = styled.div`
+//   > * {
+//     padding: 10px;
+//   }
+// `
