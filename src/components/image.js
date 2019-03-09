@@ -40,10 +40,11 @@ export const BgImage = styled(Image)`
   width: 100%;
   z-index: 0;
   height: 100vh; 
+  object-fit: cover !important; 
+  object-position: 0% 0% !important; 
+  margin:0;
 
   & > img {
-    object-fit: cover !important; 
-    object-position: 0% 0% !important; 
     font-family: 'object-fit: cover !important; object-position: 0% 0% !important;' // needed for IE9+ polyfill
   }
 `
