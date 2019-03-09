@@ -1,6 +1,6 @@
 import React from "react"
 // import styled from 'styled-components'
-import preseli from '../images/preseli.jpg'
+import preseli from './../images/preseli.jpg'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
