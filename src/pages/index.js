@@ -10,13 +10,13 @@ const IndexPage = () => (
           top: '0',
           left: '0',
           width: '100%',
-          zIndex: '-1',
           height: '100vh',
+          overflow: 'hidden',
+          zIndex: '-1',
           objectFit: 'cover !important',
           objectPosition: '0% 0% !important',
         }}>
-      <Image  
-      />
+      <Image />
 
       </div>
       <div style={{overflowY: 'scroll', height: '100vh', zIndex: '2'}}>

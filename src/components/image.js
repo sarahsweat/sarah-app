@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styled from 'styled-components'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -31,20 +30,3 @@ const Image = () => (
   />
 )
 export default Image
-
-
-export const BgImage = styled(Image)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
-  height: 100vh; 
-  object-fit: cover !important; 
-  object-position: 0% 0% !important; 
-  margin:0;
-
-  & > img {
-    font-family: 'object-fit: cover !important; object-position: 0% 0% !important;' // needed for IE9+ polyfill
-  }
-`
