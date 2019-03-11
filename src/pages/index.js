@@ -14,27 +14,17 @@ const IndexPage = () => (
           position: 'absolute',
           top: '0',
           left: '0',
-          width: '100%',
           height: '100vh',
+          width: '100%',
           overflow: 'hidden',
           zIndex: '-1',
-          objectFit: 'cover !important',
-          objectPosition: '0% 0% !important',
         }}>
       <Image />
 
       </div>
       <div style={{overflowY: 'scroll', height: '100vh', zIndex: '2'}}>
-        <div style={{ height: 'calc(40%)', opacity: 0}}/>
-        <div
-          style={{
-            backgroundColor: 'rgba(255,255,255, 0.95)',
-            padding: '30px',
-            textAlign: 'center',
-            width: '40%',
-            marginLeft: '50%'
-          }}
-        >
+        <div style={{ height: 'calc(37%)', opacity: 0}}/>
+        <InfoContainer>
           <h1 style={{margin: '0px', fontFamily: "Permanent Marker" }}>Sarah Sweat</h1>
           <div 
             style={{
@@ -43,17 +33,10 @@ const IndexPage = () => (
             }}
           />
           <p>Web Developer | Teacher | Blogger</p>
-        </div>
+
+        </InfoContainer>
         <div style={{ height: 'calc(60%)', opacity: 0}}/>
-        <div
-          style={{
-            backgroundColor: 'rgba(255,255,255, 0.95)',
-            padding: '20px',
-            textAlign: 'center',
-            width: '40%',
-            marginLeft: '50%'
-          }}
-        >
+        <InfoContainer>
           <h1>About</h1>
           <p>
             Since graduating from Florida State University almost 3 years ago, I have worked in 
@@ -65,8 +48,8 @@ const IndexPage = () => (
             on developing improved authoring experiences for content creators. I am continuing to learn 
             and grow every day with this team, knowing I made the right choice.
           </p>
-        </div>
-        <div style={{ height: '60%', opacity: 0}}/>
+        </InfoContainer>
+        <div style={{ height: '35%', opacity: 0}}/>
         
       </div>
     </Background>
@@ -80,6 +63,19 @@ const Background = styled.div`
   position: relative;
   height: 100vh;
   width: 100vw;
+`
+
+const InfoContainer = styled.div`
+  background-color: rgba(255,255,255, 0.8);
+  padding: 30px;
+  text-align: center;
+  border-radius: 5px;
+
+  @media (min-width: 850px) { 
+    margin-left: 50%;
+    width: 40%;
+  }
+          
 `
 
 // const Img = styled(Img)`
