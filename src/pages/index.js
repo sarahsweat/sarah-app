@@ -38,18 +38,19 @@ const IndexPage = () => (
         <div style={{ height: 'calc(60%)', opacity: 0}}/>
         <InfoContainer>
           <h1>About</h1>
-          <p>
-            Since graduating from Florida State University almost 3 years ago, I have worked in 
-            London and moved to NYC to pursue a career in code. In college, I studied Mechanical 
-            Engineering, but always loved my coding classes the most. Instead of applying code to 
-            hardware, I decided to make a switch and learn how to apply my coding skills on the web 
-            development side. I joined Spoon University initially and have transitioned to other 
-            Discovery brands including Food Network, HGTV, TLC and Genius Kitchen, with a focus 
-            on developing improved authoring experiences for content creators. I am continuing to learn 
-            and grow every day with this team, knowing I made the right choice.
+          <p style={{lineHeight: '20px'}}>
+            3 years ago I graduated from Florida State University not knnowing what I wanted to do. 
+            First, I moved to London to work with american study abroad students, helping them enjoy and 
+            make the most of their time across the pond. Then, I moved to NYC to pursue a career in code. 
+            In college, I studied Mechanical Engineering, but always loved my coding classes the most. 
+            Instead of applying code to hardware, I decided to make a switch and learn how to apply my 
+            coding skills on the web development side. I initially joined the Spoon University tech team 
+            and have transitioned to other Discovery Digital brands including Food Network, HGTV, TLC 
+            and Genius Kitchen, with a focus on developing improved authoring experiences for 
+            content creators. I am continuing to learn and grow every day with this team!
           </p>
         </InfoContainer>
-        <div style={{ height: '35%', opacity: 0}}/>
+        <div style={{ height: '30%', opacity: 0}}/>
         
       </div>
     </Background>
