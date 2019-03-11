@@ -1,5 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
+import SEO from "../components/seo"
+import "../components/layout.css"
+
 
 import styled from 'styled-components'
 import Image from '../components/image'
@@ -7,6 +9,7 @@ import preseli from './../images/preseli.jpg'
 
 const IndexPage = () => (
     <Background>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <div style={{
           position: 'absolute',
           top: '0',
@@ -32,7 +35,7 @@ const IndexPage = () => (
             marginLeft: '50%'
           }}
         >
-          <h1 style={{margin: '0px'}}>Sarah Sweat</h1>
+          <h1 style={{margin: '0px', fontFamily: "Permanent Marker" }}>Sarah Sweat</h1>
           <div 
             style={{
               borderBottom: 'solid 5px black',

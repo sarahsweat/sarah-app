@@ -19,7 +19,7 @@ const Image = () => (
       query {
         fileName: file(relativePath: { eq: "preseli.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1100) {
               ...GatsbyImageSharpFluid_noBase64
             }
           }
