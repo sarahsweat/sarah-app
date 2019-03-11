@@ -17,16 +17,16 @@ const Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "preseli.jpg" }) {
+        fileName: file(relativePath: { eq: "preseli.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 900) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img fluid={data.fileName.childImageSharp.fluid} />}
   />
 )
 export default Image

@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import styled from 'styled-components'
 import Image from '../components/image'
 import preseli from './../images/preseli.jpg'
@@ -26,7 +28,7 @@ const IndexPage = () => (
             backgroundColor: 'rgba(255,255,255, 0.95)',
             padding: '30px',
             textAlign: 'center',
-            width: '45%',
+            width: '40%',
             marginLeft: '50%'
           }}
         >
@@ -38,6 +40,7 @@ const IndexPage = () => (
             }}
           />
           <p>Web Developer | Teacher | Content Creator</p>
+          <Link to='/about'>about</Link>
         </div>
         <div style={{ height: 'calc(60%)', opacity: 0}}/>
         <div
@@ -45,7 +48,7 @@ const IndexPage = () => (
             backgroundColor: 'rgba(255,255,255, 0.95)',
             padding: '20px',
             textAlign: 'center',
-            width: '45%',
+            width: '40%',
             marginLeft: '50%'
           }}
         >
