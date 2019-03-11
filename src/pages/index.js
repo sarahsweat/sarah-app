@@ -39,8 +39,7 @@ const IndexPage = () => (
               margin: '20px'
             }}
           />
-          <p>Web Developer | Teacher | Content Creator</p>
-          <Link to='/about'>about</Link>
+          <p>Web Developer | Teacher | Blogger</p>
         </div>
         <div style={{ height: 'calc(60%)', opacity: 0}}/>
         <div
