@@ -1,11 +1,25 @@
 import React from "react"
 import styled from 'styled-components'
+import Image from '../components/image'
 import preseli from './../images/preseli.jpg'
 
 const IndexPage = () => (
     <Background>
-        <Img src={preseli} />
-      <div style={{overflowY: 'scroll', height: '100vh', zIndex: 1}}>
+      <div style={{
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          width: '100%',
+          zIndex: '-1',
+          height: '100vh',
+          objectFit: 'cover !important',
+          objectPosition: '0% 0% !important',
+        }}>
+      <Image  
+      />
+
+      </div>
+      <div style={{overflowY: 'scroll', height: '100vh', zIndex: '2'}}>
         <div style={{ height: 'calc(40%)', opacity: 0}}/>
         <div
           style={{
@@ -13,33 +27,26 @@ const IndexPage = () => (
             padding: '30px',
             textAlign: 'center',
             width: '45%',
-            marginLeft: '700px'
+            marginLeft: '50%'
           }}
         >
-        <h1 style={{margin: '0px'}}>Sarah Sweat</h1>
-        <div 
-          style={{
-            borderBottom: 'solid 5px black',
-            margin: '20px'
-          }}
-        />
-        <p>Web Developer | Teacher | Content Creator</p>
-          {/* <Nav>
-            <Link to="/about/">About</Link>
-            <Link to="/about/">Projects</Link>
-            <Link to="/about/">Gallery</Link>
-            <Link to="/about/">Contact</Link>
-            <Link to="/about/">Blog</Link>
-          </Nav> */}
+          <h1 style={{margin: '0px'}}>Sarah Sweat</h1>
+          <div 
+            style={{
+              borderBottom: 'solid 5px black',
+              margin: '20px'
+            }}
+          />
+          <p>Web Developer | Teacher | Content Creator</p>
         </div>
-        <div style={{ height: 'calc(70%)', opacity: 0}}/>
+        <div style={{ height: 'calc(60%)', opacity: 0}}/>
         <div
           style={{
             backgroundColor: 'rgba(255,255,255, 0.95)',
             padding: '20px',
             textAlign: 'center',
             width: '45%',
-            marginLeft: '700px'
+            marginLeft: '50%'
           }}
         >
           <h1>About</h1>
@@ -54,7 +61,7 @@ const IndexPage = () => (
             and grow every day with this team, knowing I made the right choice.
           </p>
         </div>
-        <div style={{ height: '200px', opacity: 0}}/>
+        <div style={{ height: '60%', opacity: 0}}/>
         
       </div>
     </Background>
@@ -70,16 +77,16 @@ const Background = styled.div`
   width: 100vw;
 `
 
-const Img = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  height: 100vh; 
-  object-fit: cover !important; 
-  object-position: 0% 0% !important; 
-`
+// const Img = styled(Img)`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: -1;
+//   height: 100vh; 
+//   object-fit: cover !important; 
+//   object-position: 0% 0% !important; 
+// `
 
 
 // const Nav = styled.div`
